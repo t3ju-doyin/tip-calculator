@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="tip calc.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header><img src="logo.svg" alt=""></header>
+        <main>
+            <div class="main-container">
+                <section class="left">
+                    <div class="input-section bill">
+                        <div class="user-input">
+                            <input type="number" id="amount-input"  placeholder="0">
+                            <label for="" class="bill-header">Bill</label>
+                        </div>
+                        <div class="icon">
+                            <img src="icon-dollar.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="tip-choice">
+                        <p class="tip-choice-header">
+                            Select Tip %
+                        </p>
+                        
+                        <div class="percent-buttons">
+                            <button id="five-percent" class="tip-percent">5%</button>
+                            <button id="ten-percent" class="tip-percent">10%</button>
+                            <button id="fifteen-percent" class="tip-percent">15%</button>
+                            <button id="twenty-five-percent" class="tip-percent">25%</button>
+                            <button id="fifty-percent" class="tip-percent">50%</button>
+                            <input type="number" placeholder="Custom" class="custom" id="custom-percent">
+                        </div>
+                    </div>
+                    <div class="input-section ">
+                        <div class=" user-input people">
+                            <input type="number" id="people-input" placeholder="0">
+                            <div class="with-error">
+                                <label for="" class="people-header">Number of People</label>
+                                <label for="" id="error-message">Can't be zero</label>
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <img src="icon-person.svg" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="right">
+                    <div class="left-container">
+                        <div class="amount-output">
+                            <p class="detail">Tip Amount <br> <span>/ person</span></p>
+                            <div class="tip-amount-display" id="person-amount-display">
+                                $0.00
+                            </div>
+                        </div>
+                        <div class="amount-output">
+                            <p class="detail">Total <br> <span>/ person</span></p>
+                            <div class="tip-amount-display" id="total-amount-display">
+                                $0.00
+                            </div>
+                        </div>
+                        <button id="reset">Reset</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
